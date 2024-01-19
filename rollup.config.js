@@ -14,7 +14,7 @@ export default [
         name: "quillMention",
         plugins: [terser()],
         globals: {
-          quill: "Quill"
+          "quill/core": "Quill",
         }
       },
       {
@@ -23,11 +23,11 @@ export default [
         name: "quillMention",
         plugins: [terser()],
         globals: {
-          quill: "Quill"
+          "quill/core": "Quill",
         }
       }
     ],
-    external: ["quill"],
+    external: ["quill/core"],
     plugins: [
       localResolve(),
       babel({
@@ -51,7 +51,7 @@ export default [
         format: "es"
       }
     ],
-    external: ["quill"],
+    external: ["quill/core"],
     plugins: [
       localResolve(),
       babel({
