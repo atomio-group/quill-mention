@@ -1,4 +1,4 @@
-import Quill from "quill/core";
+import Quill from "quill";
 
 const Embed = Quill.import("blots/embed");
 
@@ -96,4 +96,4 @@ MentionBlot.blotName = "mention";
 MentionBlot.tagName = "span";
 MentionBlot.className = "mention";
 
-Quill.register("blots/mention", MentionBlot);
+export default MentionBlot;

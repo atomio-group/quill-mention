@@ -1,4 +1,4 @@
-import Quill from 'quill/core';
+import Quill from 'quill';
 
 function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
@@ -421,7 +421,6 @@ var MentionBlot = /*#__PURE__*/function (_Embed) {
 MentionBlot.blotName = "mention";
 MentionBlot.tagName = "span";
 MentionBlot.className = "mention";
-Quill.register("blots/mention", MentionBlot);
 
 var Mention = /*#__PURE__*/function () {
   function Mention(quill, options) {
@@ -1094,6 +1093,5 @@ var Mention = /*#__PURE__*/function () {
   }]);
   return Mention;
 }();
-Quill.register("modules/mention", Mention);
 
-export { Mention as default };
+export { Mention, MentionBlot };
